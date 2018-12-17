@@ -1,7 +1,7 @@
 package jp.ac.uryukyu.ie.e185753;
 
 /**
- * Created by e185753 on 2018/12/13.
+ * Recreated by e185753 on 2018/12/13.
  */
 public class Main {
     public static void main(String[] args) {

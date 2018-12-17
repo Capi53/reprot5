@@ -1,7 +1,7 @@
 package jp.ac.uryukyu.ie.e185753;
 
 /**
- * 敵クラス。
+ * キャラ設定クラス。
  *  String name; //敵の名前
  *  int hitPoint; //敵のHP
  *  int attack; //敵の攻撃力
@@ -20,9 +20,9 @@ public class LivingThing{
 
     /**
      * コンストラクタ。名前、最大HP、攻撃力を指定する。
-     * @param name モンスター名
-     * @param maximumHP モンスターのHP
-     * @param attack モンスターの攻撃力
+     * @param name 対象の名
+     * @param maximumHP 対象のHP
+     * @param attack 対象の攻撃力
      */
     public LivingThing(String name, int maximumHP, int attack) {
         this.name = name;
@@ -40,17 +40,36 @@ public class LivingThing{
         return dead;
     }
 
+    /**
+     * privateなフィールド変数である名前を参照
+     * @return name
+     */
     public String getName(){
         return name;
     }
-
+    /**
+     * privateなフィールド変数であるhitPointを参照
+     * @return hitPoint
+     */
     public int getHitPoint(){
         return hitPoint;
     }
-    public void setHitPoint(int num){this.hitPoint = num;}
-
-    public void setDead(boolean bool){this.dead = bool;}
-
+    /**
+     * priateなフィールド変数であるhitPointを更新
+     */
+    public void setHitPoint(int num){
+        this.hitPoint = num;
+    }
+    /**
+     * priateなフィールド変数であるdeadを更新
+     */
+    public void setDead(boolean bool){
+        this.dead = bool;
+    }
+    /**
+     * 与えるダメージを決めて、攻撃した処理を表示するメソッド。
+     * wounded()を動かす。
+     */
     public void attack(LivingThing opponent) {
         if (!isDead()) {
             int damage = (int) (Math.random() * attack);
