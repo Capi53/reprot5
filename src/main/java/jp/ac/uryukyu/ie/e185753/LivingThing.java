@@ -55,13 +55,13 @@ public class LivingThing{
         return hitPoint;
     }
     /**
-     * priateなフィールド変数であるhitPointを更新
+     * privateなフィールド変数であるhitPointを更新
      */
     public void setHitPoint(int num){
         this.hitPoint = num;
     }
     /**
-     * priateなフィールド変数であるdeadを更新
+     * privateなフィールド変数であるdeadを更新
      */
     public void setDead(boolean bool){
         this.dead = bool;
