@@ -6,7 +6,7 @@ package jp.ac.uryukyu.ie.e185753;
  *  int hitPoint; //敵のHP
  *  int attack; //敵の攻撃力
  *  boolean dead; //敵の生死状態。true=死亡。
- * Created by tnal on 2016/11/13.
+ * ReCreated by e185753 on 2018/12/17.
  */
 public class LivingThing{
     private String name;
